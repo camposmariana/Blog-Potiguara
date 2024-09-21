@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #D8CBB8;
+    height: 1000px;
+}
+
+header {
+    text-align: center;
+    height: 120px;
+    padding: 50px;
+    background-color: #6F4F28;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Quicksand', sans-serif;
+    color: #D87A3F;
+    font-weight: normal;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sobre-conteudo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.imagem-perfil {
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 30px;
+    display: block;
+    padding-top: 50px;
+}
+
+.bio {
+    max-width: 800px;
+}
+
+.bio h2 {
+    font-size: 2em;
+    color: #6F4F28;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 15px;
+}
+
+.bio p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.carrossel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+
+}
+
+.imagens-carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide-carrossel {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-carrossel img {
+    width: 100%; /* Ajusta a largura da imagem para ocupar 100% do contêiner */
+    height: auto;
+    border-radius: 8px;
+    max-width: 300px; /* Limita a largura máxima da imagem */
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo-slide {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.legenda {
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin: 15px auto;
+    max-width: 100%;
+    text-align: center;
+    color: #555;
+    padding: 0 10px; /* Verifique se isso é necessário */
+    /* Tente reduzir o padding ou margin se necessário */
+}
+
+
+.controles-carrossel {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.controle-btn {
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #D87A3F;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.controle-btn:hover {
+    color: #6F4F28;
+}
+
+footer {
+    background-color: #6F4F28;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .sobre-conteudo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imagem-perfil {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .bio {
+        max-width: 100%;
+    }
+
+    .slide-carrossel img {
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .legenda {
+        /* Ajuste a largura ou o padding conforme necessário */
+        padding: 0 5px; /* Exemplo de ajuste */
+    }
+}
